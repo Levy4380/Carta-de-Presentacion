@@ -1,0 +1,253 @@
+/*Armando la caja*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Armando Fondo*/
+body{
+    /*background: url(../images/bg3.png);*/
+    background-image: radial-gradient(circle at 21.34% 74.05%, #ffbf73 0, #ffc46b 3.85%, #ffca65 7.69%, #ffd061 11.54%, #f5d55f 15.38%, #e6da60 19.23%, #d7de64 23.08%, #c6e36b 26.92%, #b5e673 30.77%, #a3e97e 34.62%, #8fec8a 38.46%, #79ef97 42.31%, #5ff0a6 46.15%, #3cf2b5 50%, #00f3c5 53.85%, #00f4d5 57.69%, #00f4e5 61.54%, #00f4f5 65.38%, #00f4ff 69.23%, #00f3ff 73.08%, #00f1ff 76.92%, #00efff 80.77%, #00edff 84.62%, #00eaff 88.46%, #00e7ff 92.31%, #17e3ff 96.15%, #5fdeff 100%);
+    background-size: cover;/* El fondo cubre todo */
+    background-attachment:fixed; /*El fondo no se mueve con la pagina*/
+    font-family:'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+/*Estilo general*/
+a{text-decoration:none;}/*Elimina lo subrayado*/
+
+/*Aplicando estilos al div contenedor */ 
+.contenedor {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+/*Aplicando estilos a la tarjeta */
+.tarjeta {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin: 40px 0px;
+    border-radius: 5px; /*Esquinas redondeadas*/
+    overflow: hidden; /*Esconde lo que pase afuera*/
+    z-index: 1000;/*No se que hace*/
+}
+
+/*-----------------------*/
+/*----Slider Imagenes----*/
+/*-----------------------*/
+
+.slider_banner{
+    overflow:hidden;
+    z-index: 1000;
+    position: relative;
+}
+.slider_banner .banner{
+    position: relative;
+     width: 100%;
+     
+}
+
+.slider_banner .banner img {
+    vertical-align: top; /*Elimina separacion*/
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;/*Lo lleva hasta la derecha*/
+}
+
+/*------------------------------------------------------------------*/
+
+.slider_banner .flecha-banner{
+    font-size: 50px;
+    line-height: 50px;
+    color: rgba(0,0,0,.2);
+    position: absolute;
+    top: 50%;
+    z-index: 1100;
+}
+
+.slider_banner .flecha-banner:hover{
+    color:rgba(0, 0, 0, .5)
+}
+
+.slider_banner .anterior{
+    left:20px 
+}
+
+.slider_banner .siguiente{
+    right:20px 
+}
+
+/*------------------------*/
+/*------Slider Texto------*/
+/*------------------------*/
+
+.slider_info{
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0px;
+    z-index: 1000;
+    position: relative;
+}
+
+/* Seccion Informacion */
+
+.slider_info .informacion {
+	width: 100%;
+}
+
+.slider_info .informacion article{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider_info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	padding: 20px 80px;
+	position: absolute;
+}
+
+/*------------------------------------------------------------------*/
+
+.slider_info .flecha-info{
+    font-size: 60px;
+    line-height: 60px;
+    color: rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 1000;
+    top :50%;
+}
+
+.slider_info .flecha-info:hover{
+    color:rgba(75, 206, 49, 0.612)
+}
+
+.slider_info .anterior{
+    left:20px 
+}
+
+.slider_info .siguiente{
+    right:20px 
+}
+
+/*-----------------------------------------------*/
+/*-----------------Estilo textos-----------------*/
+/*-----------------------------------------------*/
+
+.slider_info .informacion .nombre{
+    color: #444;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.slider_info .informacion .trabajo{
+    color: #55acee;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.slider_info .informacion .pais{
+    color: #8d8d8d;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.slider_info .informacion .pais img{
+    position: relative;
+    top : 3px;
+    margin-right: 10px;
+}
+
+.slider_info .informacion .subtitulo{
+    color: #444;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.slider_info .informacion .texto{
+    color: #55acee;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+/*-----------------------------------------------*/
+.slider_info .botones{
+    width: 100%;
+}
+
+.slider_info .botones span{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin: 0 10px;
+    /* background:rgb(75, 206, 49); */
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+}
+
+.slider_info .botones .active{
+    background:rgb(75, 206, 49);
+}
+
+
+
+/*--------------------------*/
+/*------Redes Sociales------*/
+/*--------------------------*/
+
+.redes-sociales{
+   text-align: center;
+   padding: 20px 0;
+}
+
+.redes-sociales a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    line-height: 20px;
+    border-radius: 50%;
+    padding: 15px 10px;
+    margin: 10px;
+}
+
+.redes-sociales .github{
+    background:#21262d;
+}
+
+.redes-sociales .linkedin{
+    background:#0a66c2;
+}
+
+.redes-sociales .instagram{
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.pie_pagina{
+    display: inline-block;
+    position: absolute;
+    font-size: medium;
+    font-weight: 600;
+    left: 87%;
+
+}

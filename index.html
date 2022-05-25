@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Tomas  Levy</title>
+    <!--Importando iconos-->
+    <script src="https://kit.fontawesome.com/766a645075.js" crossorigin="anonymous"></script>
+    <!--Enlazando mis fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!--Enlazando mi archivo css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+
+<!--Div que contiene todo el contenido de la pagina-->
+    <div class="contenedor">
+
+<!--Seccion(Div) Genera las 3 secciones-->
+        <section class="tarjeta">
+
+<!--Primera Seccion (imagenes)-->
+            <section class="slider_banner">
+
+                <div class="banner" id="banner">
+                    <img class="slide active" src="images/banner.jpg" >
+                    <img class="slide" src="images/banner2.jpg">
+                    <img class="slide" src="images/banner3.jpg">
+                    <img class="slide" src="images/banner4.jpg">
+                </div>
+
+                <!--Iconos flecha-->
+                <a href="#" id="banner_prev" class="flecha-banner anterior"><span class="fa fa-angle-left"> 
+                </span></a>
+                <a href="#" id="banner_next" class="flecha-banner siguiente"><span class="fa fa-angle-right">
+                </span></a>
+            </section>
+<!--Segunda Seccion (informacion) -->
+            <section class="slider_info">
+
+                <!--Iconos flecha-->
+                <a href="#" id="info_prev" class="flecha-info anterior"><span class="fa fa-angle-left"> 
+                </span></a>
+                <a href="#" id="info_next" class="flecha-info siguiente"><span class="fa fa-angle-right" pointed-events = 'none'>
+                </span></a>
+
+                <!--Slider-->
+                <section id="informacion" class="informacion">
+
+                    <article id="info" class="info">
+                        <!--Primer Slide-->
+                        <div class="slide active">
+                            <h1 class="nombre">Tomas Levy</h1>
+                            <h2 class="trabajo">Web Developer</h2>
+                            <p class="pais"> <img src="images/argenFlag.png" alt="">Argentina</p>
+                        </div>
+
+                        <!--Segundo Slide-->
+                        <div class="slide">
+                            <h2 class="subtitulo">Subtitulo 1</h2>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sapiente amet sunt, eum hic est saepe neque cumque accusamus labore 
+                            delectus quam sequi inventore sed placeat, minus quibusdam numquam esse officiis.</p>
+                        </div>
+                        <!--Tercer Slide-->
+                        <div class="slide">
+                            <h2 class="subtitulo">Subtitulo 2</h2>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Vel amet, quo odit natus velit doloremque aspernatur at impedit consequatur ducimus quasi odio. 
+                                Aliquid quia doloribus repudiandae doloremque dolorem, dolorum sequi!</p>
+                        </div>
+                    </article>
+                    <div class="botones" id="botones">
+                        <span class="first active"></span>
+                        <span></span>
+                        <span class="last"></span>
+                    </div>
+                </section>
+            </section>
+<!--Tercer Seccion (Redes)-->
+            <section class="redes-sociales">
+                <a href="https://github.com/Levy4380" class="redes github"><span class="fa fa-github"></span></a>
+                <a href="https://www.linkedin.com/in/tomas-levy-9a1368195/" class="redes linkedin"><span class="fa fa-linkedin"></span></a>
+                <a href="https://instagram.com/tomaslevy3/" class="redes instagram"><span class="fa fa-instagram"></span></a>   
+            </section>
+        </section>    
+    </div>
+    <footer class = 'pie_pagina'>
+        <p> <span class="fa fa-copyright"></span> Tomas Levy 2022</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
